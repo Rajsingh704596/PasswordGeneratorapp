@@ -56,12 +56,12 @@ export const PasswordGenerator=()=>{
     return(
         <>
         <div className=" w-full  h-screen bg-slate-900 text-white " >
-            <div className="p-32">
-            <div className="w-2xl p-12 bg-slate-400 mx-auto">
-            <h1 className=" text-center text-4xl">Password Generator</h1>
+            <div className="p-32 ">
+            <div className="w-2xs m-22 p-12 bg-slate-400 mx-auto md:w-2xl rounded-lg">
+            <h1 className=" text-center text-4xl font-bold ">Password Generator</h1>
 
                 <div className=" m-6 rounded-tl-lg rounded-bl-lg text-black flex shadow-md ">
-                <input type="text" readOnly value={password} className="p-2 outline-none w-full bg-blue-200" ref={copyPassRef}/>
+                <input type="text" readOnly value={password} className="p-2 outline-none w-full bg-blue-200 " ref={copyPassRef}/>
                 <button className="bg-blue-500 p-2 round rounded-tr-lg rounded-br-lg text-white hover:bg-blue-700 cursor-pointer" onClick={copyPasswordToClipboard}>Copy</button>
                 </div>    
 
